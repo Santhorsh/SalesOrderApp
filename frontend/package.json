@@ -1,8 +1,8 @@
 {
   "name": "sales-order-app-frontend",
-  "homepage": "https://github.com/Santhorsh/Sales-app.git",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://santhorsh.github.io/Sales-app ",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "axios": "^1.7.2",
@@ -16,18 +16,26 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": ["react-app"]
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
